@@ -99,7 +99,7 @@ func (p PSVariables) generateShortNames() {
 
 	var count int
 	var nameIter int
-	for i := 0; i < len(p); i++ {
+	for i := range p {
 		if p[i].Reserved {
 			continue
 		}
